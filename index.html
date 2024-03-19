@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Momma!</title>
-    <!-- Add any CSS or styling links here -->
+    <style>
+        /* CSS to center the Scratch project */
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-image: url('blue.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Add a semi-transparent background to header and footer for better readability */
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Add a semi-transparent background to main content for better readability */
+            padding: 20px;
+            max-width: 800px;
+            /* Adjust the max-width of main content as per your preference */
+            text-align: center;
+        }
+
+        .scratch-container {
+            margin-top: 20px;
+            position: absolute;
+            top: 20px;
+            /* Adjust the top position as needed */
+            left: 20px;
+            /* Adjust the left position as needed */
+        }
+
+        .scratch-iframe {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Happy Birthday Momma!</h1>
     </header>
     <main>
-        <iframe src="https://scratch.mit.edu/projects/985193581/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <div class="scratch-container">
+            <iframe src="https://scratch.mit.edu/projects/985193581/embed" allowtransparency="true" width="485"
+                height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        </div>
     </main>
     <footer>
         <p>Created by Crystal - 2024</p>
     </footer>
 </body>
+
 </html>
